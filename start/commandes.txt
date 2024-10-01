@@ -1,0 +1,10 @@
+    Vérification de l'installation de docker :
+docker --version
+docker run hello-world
+docker stop hello-world
+
+    Début de l'exo :
+docker run -it ubuntu
+uname -a:
+"Linux c7d3f871a4d7 6.6.22-linuxkit #1 SMP Fri Mar 29 12:21:27 UTC 2024 aarch64 aarch64 aarch64 GNU/Linux"
+
