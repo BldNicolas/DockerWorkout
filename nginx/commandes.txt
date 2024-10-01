@@ -1,0 +1,8 @@
+Lancer le conteneur en mode détaché :
+docker run -d nginx
+
+Port 80 :
+docker run -d -p 8080:80 nginx
+
+Accéder au serveur :
+http://localhost:8080/
