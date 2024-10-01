@@ -1,0 +1,11 @@
+Lancer le conteneur en mode détaché, sur un autre port et bind (et le delete une fois stop):
+docker run -d --rm -p 8081:80 -v ./www:/usr/share/nginx/html nginx
+
+Accéder au serveur :
+http://localhost:8081/
+
+Regarde le nom du conteneur pour le stop:
+docker ps -a
+
+Stop le conteneur:
+docker stop jovial_galileo
