@@ -1,0 +1,2 @@
+Lance le conteneur depuis une image alpine, le supprime une fois stop, le nomme "hello" et lui fait dire "hello world"
+docker run --rm --name hello alpine echo "hello world"
