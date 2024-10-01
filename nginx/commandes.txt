@@ -6,3 +6,9 @@ docker run -d -p 8080:80 nginx
 
 Accéder au serveur :
 http://localhost:8080/
+
+Stop le conteuneur :
+docker stop nginx
+
+Delete le conteuneur :
+docker rm nginx
