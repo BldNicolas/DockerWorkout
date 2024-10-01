@@ -1,2 +1,7 @@
-Lance le conteneur depuis une image alpine, le supprime une fois stop, le nomme "hello" et lui fait dire "hello world"
-docker run --rm --name hello alpine echo "hello world"
+Création du dockerfile
+
+Build de l'image
+docker build -t hello .
+
+Lance l'image
+docker run --rm hello
