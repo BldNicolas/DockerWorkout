@@ -1,0 +1,7 @@
+Création du dockerfile
+
+Build de l'image
+docker build -t python .
+
+lancement de l'image
+docker run --rm python
