@@ -1,0 +1,7 @@
+Création du dockerfile
+
+build l'image
+docker build -t fortune .
+
+lance l'image
+docker run --rm fortune
