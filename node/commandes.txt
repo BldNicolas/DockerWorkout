@@ -1,0 +1,7 @@
+Création du dockerfile
+
+Build de l'image
+docker build -t node .
+
+Lancement de l'image
+docker run --rm -d -p 3000:3000 node
