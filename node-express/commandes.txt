@@ -1,0 +1,7 @@
+Création du dockerfile
+
+Build de l'image docker
+docker build -t node-express .
+
+Lancement de l'image docker
+docker run -p 3000:3000 --rm node-express
