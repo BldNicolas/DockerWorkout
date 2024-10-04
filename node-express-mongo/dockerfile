@@ -1,13 +1,18 @@
+# Utiliser une image Node.js comme image de base
 FROM node:14
 
-WORKDIR /app
+# Créer un répertoire pour l'application
+WORKDIR /usr/src/app
 
-COPY package*.json .
-
+# Copier le package.json et installer les dépendances
+COPY package*.json ./
 RUN npm install
 
-COPY app.js .
+# Copier le reste du code de l'application
+COPY . .
 
+# Exposer le port
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+# Démarrer l'application
+CMD ["node", "app.js"]

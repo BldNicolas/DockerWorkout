@@ -1,17 +1,16 @@
 Création du dockerfile
 
-Création du package.json
-npm init
-npm install express mongoose
+Build du conteneur
+docker build -t node-express-mongo .
 
-Création du réseau docker
-docker network create node-express-mongo
+Création du réseau
+docker network create my-network
 
-docjer run -d --name mangodb --network nom mongo
+Démarrage du conteneur mongodb
+docker run -d --name mongodb --network my-network -e MONGO_INITDB_DATABASE=mydatabase mongo
 
-docker build -t exo_nem .
+Démarrage du conteneur node
+docker run -d --name node-app --network my-network -p 3000:3000 node-express-mongo
 
-docker run -it --network nem --init -p 3000:3000 --name exo_nem exo_nem
-
-//docker run --network node-express-mongo node-express-mongo
-
+Vérifier que cela fonction
+http://localhost:3000/items
