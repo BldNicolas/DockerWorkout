@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  node-app:
+    image: node:14
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - MESSAGE=${MESSAGE}
+      - PORT=${PORT}
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: node app.js
+    env_file:
+      - .env
