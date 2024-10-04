@@ -1,5 +1,8 @@
 Création du dockerfile
 
+Création du package.json
+npm install express
+
 Build de l'image docker
 docker build -t node-express .
 
