@@ -1,0 +1,17 @@
+Création du dockerfile
+
+Création du package.json
+npm init
+npm install express mongoose
+
+Création du réseau docker
+docker network create node-express-mongo
+
+docjer run -d --name mangodb --network nom mongo
+
+docker build -t exo_nem .
+
+docker run -it --network nem --init -p 3000:3000 --name exo_nem exo_nem
+
+//docker run --network node-express-mongo node-express-mongo
+
